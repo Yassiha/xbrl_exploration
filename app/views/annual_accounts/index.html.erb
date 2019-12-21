@@ -1,0 +1,8 @@
+<% @xml.values.each do |value| %>
+  <%= value['pfs:LegalReserve'][0]  %> <!-- Simple iteration to direct access to data -->
+  <br><hr>
+  <% value.each do |deeperValue| %>
+  <%= deeperValue[0] %> || <%= deeperValue[1]  %> <!-- double iteration to display all. Need to study this part -->
+  <br><hr>
+  <% end %>
+<% end %>
